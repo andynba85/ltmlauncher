@@ -19,9 +19,11 @@ function platform_rec() {
     
 }
 
+// navigate app
 function navigateLTM(androidStoreId,appStoreId) {
 
     const platform = platform_rec();
+
     function AppStoreGO() {
 
         window.location.href = "linktomyasus://";
@@ -57,6 +59,9 @@ function navigateLTM(androidStoreId,appStoreId) {
 }
 
 navigateLTM('com.asus.syncv2','1481035824')
+//location.href可以取得目前網址
+console.log(location.href.split('//')[1]);
+
 
 let input_str = "linktomyasus://scan=1457489";
 let Rec_Key = input_str.split('=')[1];
